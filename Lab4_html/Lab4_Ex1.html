@@ -1,0 +1,69 @@
+<!-- 
+    Lab 4 Exercise 1: Smart Lab Webpage 
+    Authors: Mariam Reda & Farah Balaha
+-->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>COE457 Smart Lab</title>
+    </head>
+    
+
+    <body>
+        
+        <header>
+            <a href="http://auscse.com/" target="_blank">   <!-- clicking image opens AUS CSE website in new tab -->
+                <img src="images\cse_logo.png" style="height: 56px; width: 300px;" alt="AUS CSE Logo"/>
+                    <!--style used for image height and width to avoid being overridden later on by style sheets-->
+                    <!-- http://auscse.com/main/images/banner.png -->
+            </a>
+            <h1>COE457 Smart Lab</h1>
+            <br/>
+        </header>
+
+        <section>
+            <form action="Lab4_Ex1.html" method="POST">
+                <fieldset>
+                    <p style="display: table-row;">
+                    <label for="lightsSetting" style="display: table-cell; text-align: right;"> Lab Lights: </label>
+                    <input type="radio" id="lightsOn" name="lightsSetting" value="ON" checked style="display: table-cell;">
+                        <label for="lightsOn"> ON </label>
+                    <input type="radio" id="lightsOff" name="lightsSetting" value="OFF" style="display: table-cell;">
+                        <label for="lightsOff"> OFF </label>
+                    <br/>
+                    </p>
+
+                    <p style="display: table-row;">
+                    <label for="ACSetting"  style="display: table-cell; text-align: right;"> AC Mode: </label>
+                    <input type="radio" id="ACOn" name="ACSetting" value="ON" checked style="display: table-cell;">
+                        <label for="ACOn"> ON </label>
+                    <input type="radio" id="ACOff" name="ACSetting" value="OFF" style="display: table-cell;">
+                        <label for="ACOff"> OFF </label>
+                    <br/>
+                    </p>
+                    
+                    <p style="display: table-row;">
+                    <label for="tempSetting"  style="display:table-cell; text-align: right;"> Temperature threshold: </label>
+                    <input type="number" id="tempSetting" name="tempSetting" placeholder=" Enter temperature (15.0-28.0 C)" step="any" min="15.0" max="28.0" required style="display: table-cell; width:16em;">
+                    <br/><br/>
+                    </p>
+
+                    <input type="submit" value="Save" style="margin-left: auto; display: block;">
+                </fieldset>
+            </form>
+            <br/>
+        </section>
+        <br/><br/>
+
+        <footer>
+            <hr/>
+            <h4 style="text-align: right;"> &copy; Farah Balaha & Mariam Reda </h4> <!-- copyright symbol-->
+        </footer>
+    </body>
+
+</html>
