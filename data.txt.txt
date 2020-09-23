@@ -1,0 +1,1 @@
+lightsSetting=ON&ACSetting=OFF&tempSetting=25.6
